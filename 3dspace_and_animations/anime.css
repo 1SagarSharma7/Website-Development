@@ -1,0 +1,15 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  /* margin: 200px 50px; */
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transition: all 2s ease-in-out;
+}
+
+div:hover {
+  transform: scale(1.5) translate(200px);
+  /* transition: all 2s ease-in-out; */
+}

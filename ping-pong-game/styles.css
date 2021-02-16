@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#game-wrap {
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#rod1{
+    width: 250px;
+    height: 25px;
+    background-color: red;
+    border-radius: 15px 15px;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+
+#gap{
+    width:100vw;
+    height: 94.2vh;
+}
+
+#ball{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: greenyellow;
+    border-radius: 15px 15px;
+    font-size: x-large;
+    text-align: center;
+    right: 50%;
+    top: 50%;
+    /* border: 1px solid black; */
+}
+
+
+#rod2{
+    width: 250px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 15px 15px;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+
+

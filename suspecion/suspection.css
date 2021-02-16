@@ -1,0 +1,26 @@
+@keyframes bounce {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scale(4);
+  }
+}
+
+div {
+  /* display: inline-block; */
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-color: aqua;
+  top: 40%;
+  left: 40%;
+  animation: bounce 2s ease-in-out infinite alternate;
+}
+
+span {
+  position: absolute;
+  top: 40%;
+  right: 35%;
+}

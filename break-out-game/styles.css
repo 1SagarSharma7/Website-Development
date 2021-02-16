@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0; /* marging padding 0 and box sizing border box are normal reseting */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* position: relative; */
+}
+
+/* Uniform */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* for aligning everything to center and not in a wierd columnly(if thats a word) manner */
+  justify-content: center;
+  background-color: rgb(14, 172, 245);
+}
+
+/* Utility */
+
+
+/* Show rules Button */
+#show-rules {
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px 10px;
+  margin: 30px; /* button / it has been set to abosolute from the browser window */
+  position: absolute;
+  left: 30px;
+  top: 30px; /* position of our absolute element with respect to the browser window */
+  border-style: none;
+}
+
+#show-rules:focus {
+  outline: 0; /* agar tab button use kar ke hum uspe jaye to vo focus me rahega ->aur trigger karna raha to enter */
+  /* background-color: red; */
+}
+
+#show-rules:hover {
+  background-color: #222; /* its a nice combo of black 222 333 and it keeps going on lighter */
+}
+
+#show-rules:active {
+  transform: scale(
+    0.98
+  ); /* it will shrink barely / give a look as it pressed */
+}
+
+/* Heading and Display */
+#breakout {
+  color: white;
+  /* text-align: center; */
+  font-size: 40px;
+  margin-top: 125px;
+}
+
+#display {
+  margin: 20px; /* no need of auto cause of flex combo */
+  background: white;
+}
+
+/* Rules Section */
+#close-btn {
+  height: 30px;
+  width: 60px;
+  color: white;
+  background-color: black;
+  /* padding: 10px 20px; */
+  margin: 5px;
+  border-radius: 10px 10px;
+  outline: 0;
+  border-style: none;
+}
+
+/* #close-btn:hover { */
+/* background-color: red; */
+/* background-color: #222; */
+/* } */
+
+#close-btn:active {
+  transform: scale(0.98);
+}
+
+#rules {
+  position: absolute;
+  top: 0;              /* left or right slider combo */
+  left: 0;
+  width: 380px;
+  line-height: 1.5;
+  min-height: 100vh;   /* for covering the entire viewport height would have been enough */
+  background-color: #333;
+  font-size: 15px;
+  color: white;
+  padding: 20px;
+  transform: translateX(-380px);
+  transition: transform 1s ease-in-out;    /* to hide the rules section */
+}
+
+#rules.show {
+  transform: translateX(0px);         /* to show the rules section */
+}
+
+/* Something Next */
+
+
+
+/* 
+   <-- ON-GOING -->
+   16. Move ball
+   17. Add wall bounderies
+   18. Increase score when bricks break
+   19. Lose - redraw bricks, reset score
+   
+   <-- DONE -->
+   15. Keyboard event handlers to move paddle
+   14. Move paddle
+   13. Add update() - Animate - requestAnimationFrame(cb)
+   12. Draw score
+   11. Create bricks
+   10. Create and draw paddle
+   9. Create and draw ball 
+   8. Create canvas context
+   7. button animations 
+   6. min-height 100vh 
+   5. add animation of slidding effect
+   4. show rules walla button -> absolute
+   3. canvas tag for display
+   2. div in the normal format for show rules walla animation
+   1. flex column align-center justify-content walla combo
+ */

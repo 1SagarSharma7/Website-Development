@@ -1,0 +1,109 @@
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0; /* reseting every style which has been provided by the browser */
+  box-sizing: border-box; /* is we set width 100 px and then paddin and margin of 75 and 75 it will auto adjust in 100px */
+}
+
+/* container the whole body of the calculator */
+
+.container {
+  width: 750px;
+  /* height: 750px; */
+  height: auto;
+  margin: auto; /* for centering */
+  padding: 10px;
+  margin-top: 150px;
+  background-color: rgb(233, 233, 233); /* much lighter shade of grey */
+  border-radius: 5px 5px; /* for creating a slightly curved edges */
+}
+
+.heading {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  font-size: 20px;
+  align-items: center; /* centering combo of algin items jsutify content and flex */
+  justify-content: center;
+}
+
+.display {
+  width: 710px;
+  height: 150px;
+  background-color: white;
+  margin: auto; /* centering */
+  border-radius: 5px 5px;
+  margin-top: 20px;
+}
+
+.buttons {
+  padding: 5px;
+}
+
+.button {
+  background-color: white;
+  display: inline-block;
+  height: 50px;
+  width: 170px;
+  margin: 2px;
+  font-size: 30px;
+  border-radius: 5px 5px;
+}
+
+.button p {
+  display: flex;
+  /* align-items: center; centering combo of algin items jsutify content and flex */
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+
+#row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#row3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#row4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#row5 .zero {
+  width: 354px;
+  /* padding: 10px; */
+}
+
+#row5 .dot {
+  margin: 3px;
+}
+
+/* utility */
+.operator {
+  background-color: rgb(212, 69, 69);
+  color: white;
+}
+
+#dis {
+  font-size: 50px;
+  color: red;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px;
+  padding-top: 80px;
+  /* margin: 40px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+

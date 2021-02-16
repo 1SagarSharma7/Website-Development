@@ -1,0 +1,28 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility */
+
+/* Rest */
+
+#lightbox {
+  height: 0%;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden; /* trick to disapper / u couldnt have used visibility property - if we had we would not have got that transition -animation  */
+  transition: all 2s ease-in-out;
+}
+
+#lightbox:target {
+  height: 30%;
+  width: 30%;
+  background-color: lightgrey;
+  top: 25%;
+  left: 25%;
+}
